@@ -51,7 +51,7 @@ We can just directly write to our buffer.
 That is, instead of writing an instruction to move the cursor to some location and draw a character,
 we can instead write the character into the frame at that location by ourselves, then send the final result to the terminal.
 
-In addition to making our bottleneck faster, this approach drops the need for terminals to support
-escape sequenes, making the program compatible with virtually all terminal emulators
+In addition to improving rendering performance, this approach drops the need for terminals to support
+most escape sequenes, making the program compatible with virtually all terminal emulators
 
 I haven't implemented this yet. i might do so when i feel like it.
